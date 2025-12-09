@@ -2,7 +2,7 @@ body {
     margin : 0;
 }
  /* ============== FUNDO ========================== */
-header {
+header {    
   background-image: 
     linear-gradient(
     to bottom,              /* direção: de cima para baixo */
@@ -14,34 +14,122 @@ header {
      url(Imagens/7.jpg);
     border-bottom: 10px solid rgb(72, 156, 149);
     background-size: cover; 
-    height: 700px;
+    height: 750px;
 }
 
-/* ================ Logo NETFLIX ================== */
 
-.logo {
-    display: inline-block;
-    width: 150px;
-    height: 100px;
+
+/* =============== nav-principal ================== */
+
+.nav-principal {
+    display: flex;
+    align-items: flex-start;           /* alinhamento vertical */
+    justify-content: space-between; /* espaçamento horizontal */
+    width: 100%;
+    height: 150px;
     /* border: 5px solid red; */
-    margin-left: 100px;
+    padding-top: 30px;
 }
 
-.logo img {
+.menu-esquerda {
     display: inline-block;
-    width: 130px;
-    height: 100px;
-    margin-left: 8px;
+    margin-top: 0px;
+    /* border: 5px solid purple; */
+}
+.logo-Netflix img {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-left: 70px;
+} 
+
+
+
+.menu-direita {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-right: 80px;
+    width: 180px;
+    /* border: 5px solid orange; */
 }
 
-/* =============== Botao Idiomas =================== */
+/* =============== menu idiomas =========== */
 
-.menu-idiomas {
-    display: inline-block;
-    border: 5px solid red;
-    margin-left: 100px;
+.menu-idiomas.ativo .caixa-opcoes {  /* mostra a caixa de opçoes que foi camuflada, quando clicarem no botao idiomas  */
+    display: block;
+    background-color: rgb(44, 121, 95);
+    border: 1px solid green;
 }
 
 .botao-abrir {
-
+    background-color: black;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    border: 1px solid white
 }
+
+.arrow { /* setinha do botao */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;    
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.caixa-opcoes {   /* "camufla" a janela com as opçoes */
+    display: none;    
+    border: 5px solid blue;
+}
+
+.caixa-opcoes button {  /* configura os botoes de opçoes */
+    display: block;
+}
+
+
+
+.entrar a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    display: flex;
+    align-items: center; /* alinhamento vertical */
+    justify-content: center; /* alinhamento horizontal */
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+
+
+
+/* ============================================= */
+header h1 {
+    display: flex;
+    justify-content: center; /* alinhamento horizontal */
+    color: white;
+}
+
+header p {
+    display: flex;
+    justify-content: center; /* alinhamento horizontal */
+    color: white;
+}
+
+header h2 {
+    display: flex;
+    justify-content: center; /* alinhamento horizontal */
+    color: white;
+}
+
+.caixa-email {
+    display: flex;
+    justify-content: center; /* alinhamento horizontal */
+    color: white;
+}
+
