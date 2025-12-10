@@ -10,3 +10,5 @@ botao.addEventListener('click', (e) => {
 document.addEventListener('click', () => {
     menu.classList.remove('ativo');           
 });
+
+window.location.hash = "#one1";

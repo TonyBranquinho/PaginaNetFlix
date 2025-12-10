@@ -11,8 +11,7 @@
 
 <body>
     <header>
-        <nav class="nav-principal">
-            
+        <nav class="nav-principal">            
             <aside class="menu-esquerda">
                 <a href="index.html" class="logo-Netflix">
                     <img src="Imagens/2.svg" alt="logo-Netflix">
@@ -32,7 +31,6 @@
                         <button>Espanhol</button>
                         <button>Frances</button>
                     </div>
-
                 </div>
 
                 <div class="entrar">
@@ -53,10 +51,81 @@
             <input type="email" placeholder="Email">
             <a href="index.html">Vamos la</a>
         </div>
-
-    </header>   
+    </header> 
     
+
+
+
+
+
+
+
+
+
+
+
+    <section id="one1">
+        <article class="primeiro">
+            <h1>Aproveite a TV.</h1>
+            <p>Assista em Smart TVs, Playstation, Xbox, Chromecast, Apple TV, aparelhos Blu-ray e outros dispositivos.</p>
+        </article>
+         
+        <article class="segundo">
+            <img src="Imagens/3.jpg">
+        </article>            
+    </section>
+    
+
+
+
+    <section id="two">
+        <article class="quarto">
+            <img src="Imagens/4.jpg">
+        </article>
+
+        <article class="terceiro">
+            <h1>Assista onde quiser</h1>
+            <p>Assista a quantos filmes e series no celular, tablet, laptop e TV</p>
+        </article>        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <script src="script.js"></script>
+    
+    
+    <script>
+        function scrollToSection() {
+        const alvo = document.getElementById('one1');
+        if (alvo) {
+        alvo.scrollIntoView();
+    }
+    }
+
+    // Executa quando a página carrega normalmente
+    scrollToSection();
+
+    // Executa novamente sempre que o Live Server recarregar via WebSocket
+    if (location.hostname.includes("127.0.0.1") || location.hostname.includes("localhost")) {
+    setInterval(() => {
+        scrollToSection();
+    }, 200);
+    }
+    </script>
+    
 </body>
 </html>
