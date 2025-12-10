@@ -7,7 +7,8 @@ header {
     linear-gradient(
     to bottom,              /* direção: de cima para baixo */
       rgba(0, 0, 0, 0.8) 1%,
-      rgba(0, 0, 0, .1) 80%,
+      rgba(0, 0, 0, 0.7) 8%,
+      rgba(0, 0, 0, .6) 80%,
       rgba(0, 0, 0, 0.9) 100%,
       transparent 100%        /* normal (transparente) no fundo */
     ),    
@@ -15,9 +16,8 @@ header {
     border-bottom: 10px solid rgb(72, 156, 149);
     background-size: cover; 
     height: 750px;
+    display: block
 }
-
-
 
 /* =============== nav-principal ================== */
 
@@ -26,7 +26,7 @@ header {
     align-items: flex-start;           /* alinhamento vertical */
     justify-content: space-between; /* espaçamento horizontal */
     width: 100%;
-    height: 150px;
+    height: 165px;
     /* border: 5px solid red; */
     padding-top: 30px;
 }
@@ -58,22 +58,23 @@ header {
 
 .menu-idiomas.ativo .caixa-opcoes {  /* mostra a caixa de opçoes que foi camuflada, quando clicarem no botao idiomas  */
     display: block;
-    background-color: rgb(44, 121, 95);
-    border: 1px solid green;
+    
+    /* border: 1px solid white; */
 }
 
 .botao-abrir {
     background-color: black;
     color: azure;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
+    align-items: center; 
+    padding-left: 15px;
     width: 100px;
     height: 25px;
     border: 1px solid white
 }
 
-.arrow { /* setinha do botao */
+.arrow {             /* setinha do botao */
     border: solid white;
     border-width: 0 2px 2px 0;
     display: inline-block;    
@@ -82,16 +83,24 @@ header {
     transition: transform 0.3s;
 }
 
-.caixa-opcoes {   /* "camufla" a janela com as opçoes */
+.caixa-opcoes {    /* "camufla" a janela com as opçoes */
     display: none;    
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
 .caixa-opcoes button {  /* configura os botoes de opçoes */
-    display: block;
+    display: flex;
+    width: 100px;
+    height: 20px;
+    padding-left: 15px;
+    color: white;
+    background-color: rgb(44, 121, 95);
+    border: none;
 }
 
-
+.caixa-opcoes button:hover {  /* pinta o botao quando passa o mouse */
+    background-color: blueviolet;
+}
 
 .entrar a{
     text-decoration: none;
@@ -108,28 +117,60 @@ header {
 
 
 
-/* ============================================= */
+/* ============= texto ===================== */
 header h1 {
-    display: flex;
-    justify-content: center; /* alinhamento horizontal */
+    font-family: 'Arial', Courier, monospace;
+    text-align: center;
     color: white;
+    line-height: 15px;
+    font-size: 30px;
 }
 
 header p {
-    display: flex;
-    justify-content: center; /* alinhamento horizontal */
+    font-family: 'Arial', Courier, monospace;
+    font-size: 15px;
+    text-align: center;
     color: white;
+    margin-top: 25px;
 }
 
 header h2 {
-    display: flex;
-    justify-content: center; /* alinhamento horizontal */
+    font-family: 'Arial', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
     color: white;
 }
+
+
+
+
+
+/* ============================================= */
 
 .caixa-email {
     display: flex;
     justify-content: center; /* alinhamento horizontal */
     color: white;
+    /* border: 5px solid blue; */
+    margin-top: 45px;
 }
 
+.caixa-email input {
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.caixa-email a {
+    display: flex;
+    align-items: center; /* alinhamento vertical */
+    justify-content: center; /* alinhamento horizontal */
+    margin-left: 10px;
+    width: 100px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
