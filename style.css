@@ -164,8 +164,8 @@ header h2 {
 
 .caixa-email a {
     display: flex;
-    /* align-items: center; alinhamento vertical */
     justify-content: center; /* alinhamento horizontal */
+    align-items: center; /* alinhamento vertical */
     margin-left: 10px;
     width: 100px;
     background-color: red;
@@ -211,18 +211,37 @@ header h2 {
 }
 
 
-/* ============== secao one ================= */
+/* ============== secao two ================= */
 
 #two {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 370px;
+    border-bottom: 10px solid rgb(34, 48, 47);
+}
+
+.quarto img {
+    width: 380px;
+    height: auto;
+    /* border: 1px solid yellow; */
+}
+.terceiro {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 380px;
+    height: 270px;
+    /* border: 1px solid orange; */
+
 }
 
 .terceiro h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
 }
 
 .terceiro p {
@@ -230,7 +249,72 @@ header h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.quatro img {
-    display: block;
-    width: 50px;
+
+/* ============== secao tree ================= */
+
+.tree {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    border-bottom: 10px solid rgb(34, 48, 47);    
+}
+
+.quinto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 380px;
+    height: 280px;
+    /* border: 1px solid orange; */
+}
+
+.quinto h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.quinto p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.sexto img {
+    width: 400px;
+    /* border: 1px solid yellow; */
+}
+
+
+/* ============== secao four ================= */
+#four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: black;
+}
+
+.setimo img {
+    width: 280px;
+}
+
+.oitavo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid yellow; */
+}
+
+.oitavo h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.oitavo p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
